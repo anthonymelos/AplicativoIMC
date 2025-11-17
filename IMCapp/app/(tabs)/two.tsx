@@ -8,8 +8,6 @@ export default function TabTwoScreen() {
   const [imc, setImc] = useState<number | null>(null);
   const [classificacao, setClassificacao] = useState('');
   const [corClassificacao, setCorClassificacao] = useState('#000');
-  const [frase, setFrase] = useState('');
-  const [autor, setAutor] = useState('');
 
   const calcularIMC = () => {
     if (!peso || !altura) {
@@ -55,8 +53,6 @@ export default function TabTwoScreen() {
     setAltura('');
     setImc(null);
     setClassificacao('');
-    setFrase('');
-    setAutor('');
   };
 
   return (

@@ -24,7 +24,7 @@ export default function TabLayout() {
         headerShown: useClientOnlyValue(false, true),
       }}>
       
-      {/* ABA 1: INÍCIO */}
+      {/*Início*/}
       <Tabs.Screen
         name="index"
         options={{
@@ -33,7 +33,7 @@ export default function TabLayout() {
         }}
       />
       
-      {/* ABA 2: CALCULADORA */}
+      {/*Calculadora */}
       <Tabs.Screen
         name="two"
         options={{
@@ -42,7 +42,7 @@ export default function TabLayout() {
         }}
       />
       
-      {/* ABA 3: SOBRE */}
+      {/*Sobre*/}
       <Tabs.Screen
         name="three"
         options={{
