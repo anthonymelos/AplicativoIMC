@@ -253,7 +253,7 @@ export default function TelaAlimentos() {
             <Text style={{ fontSize: 16, textAlign: 'center' }}>Nenhum dado encontrado. Por favor, faça uma busca.</Text>
           </View>
         )
-      };
+      }
 
         <TouchableOpacity
           style={styles.button}
