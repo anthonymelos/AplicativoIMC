@@ -27,7 +27,7 @@ export default function TabLayout() {
       
       {/*Início*/}
       <Tabs.Screen
-        name="index"
+        name="TelaHome"
         options={{
           title: 'Início',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
@@ -36,7 +36,7 @@ export default function TabLayout() {
       
       {/*Calculadora */}
       <Tabs.Screen
-        name="two"
+        name="TelaCalculadora"
         options={{
           title: 'Calculadora',
           tabBarIcon: ({ color }) => <TabBarIcon name="calculator" color={color} />,
@@ -45,7 +45,7 @@ export default function TabLayout() {
       
       {/*Sobre*/}
       <Tabs.Screen
-        name="three"
+        name="TelaInformacoes"
         options={{
           title: 'Sobre',
           tabBarIcon: ({ color }) => <TabBarIcon name="info-circle" color={color} />,
@@ -56,7 +56,7 @@ export default function TabLayout() {
        <Tabs.Screen
         name="TelaAlimentos" 
         options={{
-          title: 'Recomendações Alimentares',
+          title: 'Tabela Alimentar',
           tabBarIcon: ({ color }) => <TabBarIcon name="cutlery" color={color} />,
           headerShown: true,
         }}

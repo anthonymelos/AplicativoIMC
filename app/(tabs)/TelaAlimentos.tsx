@@ -257,7 +257,7 @@ export default function TelaAlimentos() {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() => router.push('/(tabs)/three')}>
+          onPress={() => router.push('/(tabs)/TelaInformacoes')}>
           <Text style={[styles.buttonText, { marginTop: 20, paddingHorizontal: 30, }]}>Ir para Página de agradecimentos!</Text>
         </TouchableOpacity>
       </View>
@@ -266,143 +266,128 @@ export default function TelaAlimentos() {
 }
 
 const styles = StyleSheet.create({
-  scrollContainer: {
+ scrollContainer: {
     flexGrow: 1,
+    backgroundColor: '#F5F7FA', // AJUSTE 1: Background global
   },
+
   container: {
     flex: 1,
     padding: 20,
     paddingTop: 40,
   },
+
   title: {
     fontSize: 28,
-    fontWeight: 'bold',
+    fontWeight: '600', // AJUSTE 2: Reduzir de bold
     marginBottom: 30,
     textAlign: 'center',
+    color: '#2E7D9C', // AJUSTE 3: Cor primária
   },
-  inputContainer: {
-    marginBottom: 20,
-    backgroundColor: 'transparent',
-  },
-  label: {
-    fontSize: 16,
-    marginBottom: 8,
-    fontWeight: '600',
-  },
+
+  // AJUSTE 4: Input melhorado
   input: {
-    borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#ECF0F1',
+    borderRadius: 12,
     padding: 15,
     fontSize: 16,
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#FFFFFF',
+    color: '#333333',
+    fontWeight: '500',
+    marginBottom: 15,
   },
+
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 10,
-    marginBottom: 30,
+    marginBottom: 20,
     backgroundColor: 'transparent',
+    gap: 10, // AJUSTE 5: Espaçamento entre botões
   },
+
   button: {
     flex: 1,
     paddingVertical: 15,
-    borderRadius: 10,
+    borderRadius: 12,
     alignItems: 'center',
-    marginHorizontal: 5,
+    // AJUSTE 6: Adicionar sombra
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
   },
+
+  // AJUSTE 7: Botão buscar com cor primária
   buttonBuscar: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#2E7D9C',
   },
+
+  // AJUSTE 8: Melhorar cor do botão limpar
   buttonLimpar: {
-    backgroundColor: '#95a5a6',
+    backgroundColor: '#95A5A6',
   },
+
   buttonText: {
     color: '#fff',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
+
+  // AJUSTE 9: Card de resultado com design premium
   resultadoContainer: {
-    backgroundColor: '#f0f0f0',
-    padding: 25,
-    borderRadius: 15,
-    alignItems: 'center',
-    marginBottom: 20,
+    backgroundColor: '#FFFFFF', // Branco em vez de #f0f0f0
+    padding: 20,
+    borderRadius: 14,
+    marginBottom: 15,
+    // AJUSTE 10: Adicionar borda colorida baseada no tipo de alimento
+    borderLeftWidth: 5,
+    borderLeftColor: '#27AE60', // Verde para alimentos
+    // AJUSTE 11: Adicionar sombra
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 3,
   },
-  resultadoTitulo: {
-    fontSize: 18,
-    marginBottom: 10,
-  },
-  itemTitulo: {
-    fontSize: 48,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-table: {
-    borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 10,
-    overflow: 'hidden',
-  },
-  tableRow: {
-    flexDirection: 'row',
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
-  },
-  tableHeader: {
-    backgroundColor: '#333',
-  },
-  tableHeaderText: {
-    flex: 1,
-    padding: 12,
-    fontWeight: 'bold',
-    color: '#fff',
-    textAlign: 'center',
-  },
-  tableCell: {
-    flex: 1,
-    padding: 12,
-    textAlign: 'center',
-    fontSize: 14,
-  },
-  resultadosWrapper: {
-    backgroundColor: 'transparent',
-  },
+
+  // AJUSTE 12: Nome do alimento com melhor estilo
   itemNome: {
-    fontSize: 22,
-    fontWeight: 'bold',
+    fontSize: 20,
+    fontWeight: '700',
     marginBottom: 15,
     textTransform: 'capitalize',
-    color: '#333',
+    color: '#2E7D9C', // Cor primária
   },
-  divider: {
-    height: 1,
-    backgroundColor: '#ddd',
-    marginVertical: 10,
-  },
+
+  // AJUSTE 13: Linhas de informação com melhor layout
   infoRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingVertical: 6,
+    paddingVertical: 8,
     backgroundColor: 'transparent',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ECF0F1', // AJUSTE 14: Adicionar divisor
   },
+
+  // AJUSTE 15: Label de informação
   infoLabel: {
-    fontSize: 16,
-    color: '#666',
-  },
-  infoValor: {
-    fontSize: 16,
+    fontSize: 14,
+    color: '#666666',
     fontWeight: '600',
-    color: '#333',
   },
-  emptyContainer: {
-    alignItems: 'center',
-    marginTop: 40,
+
+  // AJUSTE 16: Valor de informação destacado
+  infoValor: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#27AE60', // Verde para destacar valores
+  },
+
+  resultadosWrapper: {
     backgroundColor: 'transparent',
-  },
-  emptyText: {
-    fontSize: 16,
-    color: '#777',
-    textAlign: 'center',
+    marginBottom: 20,
   },
 });
